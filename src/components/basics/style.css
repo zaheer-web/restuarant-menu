@@ -1,0 +1,172 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page Layout */
+body {
+  background-image: url(/public/images/back.avif);
+  padding: 40px 20px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+/* Card Container Layout */
+.main-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Each Card */
+.card-container {
+  width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Image */
+.card-media {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+  padding: 16px 20px;
+}
+
+.card-number {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.card-author {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f77f00;
+  margin-bottom: 12px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-weight: 600;
+  color: #2a9d8f;
+  margin-bottom: 12px;
+}
+
+/* Button Styling */
+.card-btn {
+  margin: 10px 20px 16px;
+  padding: 10px 0;
+  border: none;
+  background: #f1eb7c;
+  color: rgb(24, 23, 23);
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+  background: #ed8e79;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    width: 90%;
+  }
+}
+
+
+/* heading  */
+/* Navbar Section */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Buttons inside navbar */
+.header-btn {
+  background-color: #f79bec;
+  color: #050404;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.header-btn:hover {
+  background-color: #d45d41;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Optional: Add active state */
+.header-btn.active {
+  background-color: #2a9d8f;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .header-btn {
+    width: 120px;
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+}
